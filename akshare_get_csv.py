@@ -91,6 +91,8 @@ def get_stock_data(symbol, adjust_type="qfq"):
         print(f"数据总行数: {len(df)}")
         print("前5行数据预览：")
         print(df.head())
+        print("后5行数据预览：")
+        print(df.tail())
 
     except Exception as e:
         print(f"发生异常: {e}")
